@@ -1,5 +1,9 @@
 # Room: Pyrat (TryHackMe)
 
+## Notes:
+- The vuln is on connection, due to improper handling of the request headers `GET`, `POST`, ... 
+- Exploiting this is takes a little python fuckery to get working, however it is simple.
+
 ## Methodology
 
 _Host:_ `<host>`
@@ -75,7 +79,6 @@ __Reverse Shell (Bash)__
 __Reverse Shell (PHP)__
 
 > _Note:_ Not confirmed that `php` is installed.
-
 
 
 
