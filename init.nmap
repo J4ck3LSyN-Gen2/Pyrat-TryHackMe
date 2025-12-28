@@ -1,0 +1,92 @@
+# Nmap 7.94SVN scan initiated Fri Dec 26 11:24:47 2025 as: nmap -vv -sC -sV -T5 -O -oN init.nmap 10.67.158.45
+adjust_timeouts2: packet supposedly had rtt of -912440 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -912440 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -178109 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -178109 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -183664 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -183664 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -218820 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -218820 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -239084 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -239084 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -511781 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -511781 microseconds.  Ignoring time.
+Nmap scan report for 10.67.158.45
+Host is up, received reset ttl 62 (0.076s latency).
+Scanned at 2025-12-26 11:24:47 MST for 172s
+Not shown: 998 closed tcp ports (reset)
+PORT     STATE SERVICE  REASON         VERSION
+22/tcp   open  ssh      syn-ack ttl 62 OpenSSH 8.2p1 Ubuntu 4ubuntu0.13 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   3072 0a:5b:f1:f3:1a:50:ab:bd:1f:1e:71:8b:cd:9a:0d:10 (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC0m3/zWB4/AVcVlsS+BQzhKi9jwPRJFtY5t4EXItwdw2Dp0lyAn/K6lwuyP1LpIjTABxlhMbQCZ2hNkUyoA3d8GdGaNqLnuy8kDKxXT2TERpPqtNQaDruG+jvbd1bE628o47VUjHkE4V++12cPXer1er/t8gFDMOY9cyJGmiqFaKdAMJvjTDkx8t0Jq3NMkKSe4yIHQ/uJrkyEaGW5ZeFX0k7WKZWHp8hTglfhlNuj+hvWdLkqUO073RkkcyxUjWhd8O9l+2/tIoELDWc4VhCuJdkD2rTGXTaD0PLsiDl2KKljXLSP4pvN4R/m+UZaClHvtFb+a9/WIzPc4jcuBaf11JEoJs2am4nQcoLbcibkd9sHIq/1nwJKRFe8JbhphECu6P0GcyOhdOFDW1CZjPo7eSIwsUxcgTfAg3uxmqEcX8BauKvltFse9x2UwDy44uxYpCT1w0UYpeyLYeIU8vG5KGvUv1Tn6jts48bumHQC6xxRvw5HRRAwr8lmjoLk6Uk=
+|   256 45:13:bf:d2:c0:c9:c9:fb:bc:96:78:37:24:7d:63:d7 (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBG57YgqLmGaHqqDrwnRYbkXKaZenfRykhNlEHC/U6BoYuEvVWYsbS8TvhgJoKaQQfVhL4roSHhf+0UWYg8GBvII=
+|   256 bb:03:25:fe:e2:8b:22:04:1c:ca:ad:6f:ef:21:d2:10 (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIb+oxRhFjLL8x/Do1wfgDt+73S8UQAQkp/x5mxkBfPm
+8000/tcp open  http-alt syn-ack ttl 62 SimpleHTTP/0.6 Python/3.11.2
+|_http-server-header: SimpleHTTP/0.6 Python/3.11.2
+|_http-title: Site doesn't have a title (text/html; charset=utf-8).
+| fingerprint-strings: 
+|   DNSStatusRequestTCP, DNSVersionBindReqTCP, JavaRMI, LANDesk-RC, NotesRPC, Socks4, X11Probe, afp, giop: 
+|     source code string cannot contain null bytes
+|   FourOhFourRequest, LPDString, SIPOptions: 
+|     invalid syntax (<string>, line 1)
+|   GetRequest: 
+|     name 'GET' is not defined
+|   HTTPOptions, RTSPRequest: 
+|     name 'OPTIONS' is not defined
+|   Help: 
+|_    name 'HELP' is not defined
+| http-methods: 
+|_  Supported Methods: GET HEAD POST
+|_http-open-proxy: Proxy might be redirecting requests
+|_http-favicon: Unknown favicon MD5: FBD3DB4BEF1D598ED90E26610F23A63F
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port8000-TCP:V=7.94SVN%I=7%D=12/26%Time=694ED2FD%P=x86_64-pc-linux-gnu%
+SF:r(GenericLines,1,"\n")%r(GetRequest,1A,"name\x20'GET'\x20is\x20not\x20d
+SF:efined\n")%r(X11Probe,2D,"source\x20code\x20string\x20cannot\x20contain
+SF:\x20null\x20bytes\n")%r(FourOhFourRequest,22,"invalid\x20syntax\x20\(<s
+SF:tring>,\x20line\x201\)\n")%r(Socks4,2D,"source\x20code\x20string\x20can
+SF:not\x20contain\x20null\x20bytes\n")%r(HTTPOptions,1E,"name\x20'OPTIONS'
+SF:\x20is\x20not\x20defined\n")%r(RTSPRequest,1E,"name\x20'OPTIONS'\x20is\
+SF:x20not\x20defined\n")%r(DNSVersionBindReqTCP,2D,"source\x20code\x20stri
+SF:ng\x20cannot\x20contain\x20null\x20bytes\n")%r(DNSStatusRequestTCP,2D,"
+SF:source\x20code\x20string\x20cannot\x20contain\x20null\x20bytes\n")%r(He
+SF:lp,1B,"name\x20'HELP'\x20is\x20not\x20defined\n")%r(LPDString,22,"inval
+SF:id\x20syntax\x20\(<string>,\x20line\x201\)\n")%r(SIPOptions,22,"invalid
+SF:\x20syntax\x20\(<string>,\x20line\x201\)\n")%r(LANDesk-RC,2D,"source\x2
+SF:0code\x20string\x20cannot\x20contain\x20null\x20bytes\n")%r(NotesRPC,2D
+SF:,"source\x20code\x20string\x20cannot\x20contain\x20null\x20bytes\n")%r(
+SF:JavaRMI,2D,"source\x20code\x20string\x20cannot\x20contain\x20null\x20by
+SF:tes\n")%r(afp,2D,"source\x20code\x20string\x20cannot\x20contain\x20null
+SF:\x20bytes\n")%r(giop,2D,"source\x20code\x20string\x20cannot\x20contain\
+SF:x20null\x20bytes\n");
+OS fingerprint not ideal because: Timing level 5 (Insane) used
+Aggressive OS guesses: Linux 3.1 (95%), Linux 3.2 (95%), AXIS 210A or 211 Network Camera (Linux 2.6.17) (94%), ASUS RT-N56U WAP (Linux 3.4) (93%), Linux 3.16 (93%), Linux 2.6.32 (92%), Linux 2.6.39 - 3.2 (92%), Linux 3.1 - 3.2 (92%), Linux 3.2 - 4.9 (92%), Linux 3.7 - 3.10 (92%)
+No exact OS matches for host (test conditions non-ideal).
+TCP/IP fingerprint:
+SCAN(V=7.94SVN%E=4%D=12/26%OT=22%CT=1%CU=42899%PV=Y%DS=3%DC=I%G=N%TM=694ED39B%P=x86_64-pc-linux-gnu)
+SEQ(SP=105%GCD=1%ISR=10E%TI=Z%CI=Z%TS=A)
+OPS(O1=M578ST11NW7%O2=M578ST11NW7%O3=M578NNT11NW7%O4=M578ST11NW7%O5=M578ST11NW7%O6=M578ST11)
+WIN(W1=F4B3%W2=F4B3%W3=F4B3%W4=F4B3%W5=F4B3%W6=F4B3)
+ECN(R=Y%DF=Y%T=40%W=F507%O=M578NNSNW7%CC=Y%Q=)
+T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS%RD=0%Q=)
+T2(R=N)
+T3(R=N)
+T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)
+T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)
+T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)
+T7(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)
+U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)
+IE(R=Y%DFI=N%T=40%CD=S)
+
+Uptime guess: 9.608 days (since Tue Dec 16 20:52:04 2025)
+Network Distance: 3 hops
+TCP Sequence Prediction: Difficulty=261 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Dec 26 11:27:39 2025 -- 1 IP address (1 host up) scanned in 172.14 seconds
