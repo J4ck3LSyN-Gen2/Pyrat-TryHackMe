@@ -1,7 +1,5 @@
 # Room: Pyrat (TryHackMe)
 
-_Player:_ J4ck3LSyN
-
 <p align="center">
     <img src="https://tryhackme-badges.s3.amazonaws.com/J4ck3LSyN.png" alt="Your Image Badge" />
 </p>
